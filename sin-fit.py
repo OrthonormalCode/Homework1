@@ -46,7 +46,9 @@ for i  in dv:
     v_r = model.fit(vx,vy).predict(X)
 
     Real_y=ground_truth(X)
-
+    
     #plt.plot(vx,vy[:,1],'o',X,v_r,X,Real_y[:,1])
+
     plt.plot(X,v_r,X,Real_y)
+    plt.savefig("fit-with"+str(i)+"-random-data.svg")
     plt.show()
