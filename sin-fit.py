@@ -49,6 +49,8 @@ for i  in dv:
     
     #plt.plot(vx,vy[:,1],'o',X,v_r,X,Real_y[:,1])
 
-    plt.plot(X,v_r,X,Real_y)
+    plt.plot( X , Real_y , linewidth=1,  linestyle=(0, (5, 2, 1, 2)) ,  label='Real values')
+    plt.plot( X , v_r, linewidth=1 ,  label='Predicted values')
+    plt.legend()
     plt.savefig("fit-with"+str(i)+"-random-data.svg")
     plt.show()
