@@ -1,0 +1,1 @@
+Bu folder da ki kod tamamen benim eserimdir.
